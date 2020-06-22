@@ -12,7 +12,7 @@ def main():
   firstNumber = int(input("Type a number: "))
   secondNumber = int(input("Another one: "))
 
-  op = input("Choose an operation (+ ADDITION) (- SUBTRACTION) (* MULTIPLICATION) (/ DIVISION) (** POTENTIATION) ")
+  operation = input("Choose an operation (+ ADDITION) (- SUBTRACTION) (* MULTIPLICATION) (/ DIVISION) (** POTENTIATION) ")
 
   sumOperation = firstNumber + secondNumber
   subsubtractionOperation = firstNumber - secondNumber
@@ -20,15 +20,15 @@ def main():
   divisionOperation = firstNumber / secondNumber
   potentiationOperation = firstNumber ** secondNumber
 
-  if op == "+":
+  if operation == "+":
       print("The result is: ", sumOperation)
-  elif op == "-":
+  elif operation == "-":
       print("The result is: ", subsubtractionOperation)
-  elif op == "*":
+  elif operation == "*":
       print("The result is: ", multiplicationOperation)
-  elif op == "/":
+  elif operation == "/":
       print("The result is: ", divisionOperation)
-  elif op == "**":
+  elif operation == "**":
       print(firstNumber, "to", secondNumber, "is", potentiationOperation)
 
 while True:
